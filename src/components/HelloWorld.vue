@@ -10,7 +10,7 @@
     <div class="actionsContainer pa-4">
       <h2 class="font-weight-bold text-center mb-6">Opener Festival 2025 - Akcje koncertowe</h2>
       <div class="action d-flex">
-        <img height="150" src="@/assets/welcome-back.webp" alt="Welcome back" class="mr-4" />
+        <img src="@/assets/welcome-back.webp" alt="Welcome back" class="mr-4" />
         <div class="d-flex flex-column justify-space-around">
           <h3 class="mb-2">Kartki "Welcome back"</h3>
           <p class="mb-2">Na początku koncertu wszyscy podnosimy kartki z napisem "WELCOME BACK", tworząc niesamowity widok dla zespołu. Pokażmy im naszą jedność, wsparcie i wdzięczność za powrót! 🖤</p>
@@ -19,7 +19,7 @@
       </div>
       <v-divider class="my-4"/>
       <div class="action d-flex">
-        <img height="150" src="@/assets/welcome-back.webp" alt="Welcome back" class="mr-4" />
+        <img src="@/assets/welcome-back.webp" alt="Welcome back" class="mr-4" />
         <div class="d-flex flex-column justify-space-around">
           <h3 class="mb-2">Kartki "Welcome back"</h3>
           <p class="mb-2">Na początku koncertu wszyscy podnosimy kartki z napisem "WELCOME BACK", tworząc niesamowity widok dla zespołu. Pokażmy im naszą jedność, wsparcie i wdzięczność za powrót! 🖤</p>
@@ -28,7 +28,7 @@
       </div>
       <v-divider class="my-4"/>
       <div class="action d-flex">
-        <img height="150" src="@/assets/welcome-back.webp" alt="Welcome back" class="mr-4" />
+        <img src="@/assets/welcome-back.webp" alt="Welcome back" class="mr-4" />
         <div class="d-flex flex-column justify-space-around">
           <h3 class="mb-2">Kartki "Welcome back"</h3>
           <p class="mb-2">Na początku koncertu wszyscy podnosimy kartki z napisem "WELCOME BACK", tworząc niesamowity widok dla zespołu. Pokażmy im naszą jedność, wsparcie i wdzięczność za powrót! 🖤</p>
@@ -70,13 +70,19 @@ function openAction1(): void {
       margin-top: -1px;
     }
   }
+  .action {
+    img {
+      width: 213px;
+      height: 150px;
+      object-fit: cover;
+    }
+  }
   @media (max-width: 599px) {
     .action {
       flex-direction: column;
       align-items: center;
       img {
         margin-right: 0 !important;
-        width: fit-content;
         margin-bottom: 8px;
       }
       h3, p {
