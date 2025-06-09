@@ -19,19 +19,19 @@
       </div>
       <v-divider class="my-4"/>
       <div class="action d-flex">
-        <img src="@/assets/welcome-back.webp" alt="Welcome back" class="mr-4" />
+        <img src="@/assets/one-more-light.webp" alt="Wspólne śpiewanie One More Light" class="mr-4" />
         <div class="d-flex flex-column justify-space-around">
-          <h3 class="mb-2">Kartki "Welcome back"</h3>
-          <p class="mb-2">Na początku koncertu wszyscy podnosimy kartki z napisem "WELCOME BACK", tworząc niesamowity widok dla zespołu. Pokażmy im naszą jedność, wsparcie i wdzięczność za powrót! 🖤</p>
+          <h3 class="mb-2">Wspólne śpiewanie "One More Light"</h3>
+          <p class="mb-2">Podczas przerwy przed bisem – najprawdopodobniej zaraz po utworze "Faint" – chcemy razem, jako jedna społeczność, zaśpiewać "One More Light" dla Chestera Benningtona. To będzie nasz muzyczny hołd, nasz gest pamięci i miłości. ❤️</p>
           <v-btn append-icon="mdi-chevron-triple-right" :ripple="false" variant="outlined" @click="openAction1">Czytaj więcej</v-btn>
         </div>
       </div>
       <v-divider class="my-4"/>
       <div class="action d-flex">
-        <img src="@/assets/welcome-back.webp" alt="Welcome back" class="mr-4" />
+        <img src="@/assets/morze-swiatel.webp" alt="Morze świateł" class="mr-4" />
         <div class="d-flex flex-column justify-space-around">
-          <h3 class="mb-2">Kartki "Welcome back"</h3>
-          <p class="mb-2">Na początku koncertu wszyscy podnosimy kartki z napisem "WELCOME BACK", tworząc niesamowity widok dla zespołu. Pokażmy im naszą jedność, wsparcie i wdzięczność za powrót! 🖤</p>
+          <h3 class="mb-2">Morze świateł na utworze "Lost"</h3>
+          <p class="mb-2">Podczas fortepianowego intro do utworu "Lost", wszyscy włączamy latarki w telefonach i unosimy je w górę. Chcemy stworzyć niezapomniany widok tysięcy świateł, który poruszy serca nie tylko zespołu, ale i całej publiczności! ✨</p>
           <v-btn append-icon="mdi-chevron-triple-right" :ripple="false" variant="outlined" @click="openAction1">Czytaj więcej</v-btn>
         </div>
       </div>
@@ -75,6 +75,7 @@ function openAction1(): void {
       width: 213px;
       height: 150px;
       object-fit: cover;
+      border-radius: 8px;
     }
   }
   @media (max-width: 599px) {
