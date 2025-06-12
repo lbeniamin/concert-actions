@@ -1,19 +1,19 @@
 <template>
   <v-container class="fill-height" max-width="900">
     <div class="mx-auto">
-      <v-img class="mb-4" height="150" src="@/assets/logo.webp"/>
+      <v-img class="siteLogo mb-4" height="150" @click="openFacebookPage" src="@/assets/logo.webp" />
       <div class="mb-8 text-center">
         <div class="text-body-2 font-weight-regular mb-n1">POLAND</div>
         <h1 class="text-h2 font-weight-bold">LINKIN PARK</h1>
       </div>
     </div>
     <div class="actionsContainer pa-4">
-      <h2 class="font-weight-bold text-center mb-6">Opener Festival 2025 - Akcje koncertowe</h2>
+      <h2 class="font-weight-bold text-center mb-6">Open'er Festival 2025 - Akcje koncertowe</h2>
       <div class="action d-flex">
         <img src="@/assets/welcome-back.webp" alt="Welcome back" class="mr-4" />
         <div class="d-flex flex-column justify-space-around">
           <h3 class="mb-2">Kartki "Welcome back"</h3>
-          <p class="mb-2">Na początku koncertu wszyscy podnosimy kartki z napisem "WELCOME BACK", tworząc niesamowity widok dla zespołu. Pokażmy im naszą jedność, wsparcie i wdzięczność za powrót! 🖤</p>
+          <p class="mb-2">Na początku koncertu wszyscy podnosimy kartki z napisem "WELCOME BACK", tworząc niesamowity widok dla zespołu. Pokażmy im naszą jedność, wsparcie i wdzięczność za powrót! Link do pobrania kartki: <a target="_blank" href="https://bit.ly/welcome-back-lp">https://bit.ly/welcome-back-lp</a> 🖤</p>
           <v-btn append-icon="mdi-chevron-triple-right" :ripple="false" variant="outlined" @click="openAction1">Czytaj więcej</v-btn>
         </div>
       </div>
@@ -22,8 +22,8 @@
         <img src="@/assets/one-more-light.webp" alt="Wspólne śpiewanie One More Light" class="mr-4" />
         <div class="d-flex flex-column justify-space-around">
           <h3 class="mb-2">Wspólne śpiewanie "One More Light"</h3>
-          <p class="mb-2">Podczas przerwy przed bisem – najprawdopodobniej zaraz po utworze "Faint" – chcemy razem, jako jedna społeczność, zaśpiewać "One More Light" dla Chestera Benningtona. To będzie nasz muzyczny hołd, nasz gest pamięci i miłości. ❤️</p>
-          <v-btn append-icon="mdi-chevron-triple-right" :ripple="false" variant="outlined" @click="openAction1">Czytaj więcej</v-btn>
+          <p class="mb-2">Podczas przerwy przed bisem (najprawdopodobniej zaraz po utworze "Faint") lub na koniec występu chcemy razem, jako jedna społeczność, zaśpiewać "One More Light" dla Chestera Benningtona. To będzie nasz muzyczny hołd, nasz gest pamięci i miłości. ❤️</p>
+          <v-btn append-icon="mdi-chevron-triple-right" :ripple="false" variant="outlined" @click="openAction2">Czytaj więcej</v-btn>
         </div>
       </div>
       <v-divider class="my-4"/>
@@ -31,7 +31,7 @@
         <img src="@/assets/morze-swiatel.webp" alt="Morze świateł" class="mr-4" />
         <div class="d-flex flex-column justify-space-around">
           <h3 class="mb-2">Morze świateł na utworze "Lost"</h3>
-          <p class="mb-2">Podczas fortepianowego intro do utworu "Lost", wszyscy włączamy latarki w telefonach i unosimy je w górę. Chcemy stworzyć niezapomniany widok tysięcy świateł, który poruszy serca nie tylko zespołu, ale i całej publiczności! ✨</p>
+          <p class="mb-2">Podczas fortepianowego intra do utworu "Lost", wszyscy włączamy latarki w telefonach i unosimy je w górę. Chcemy stworzyć niezapomniany widok tysięcy świateł, który poruszy serca nie tylko zespołu, ale i całej publiczności! ✨</p>
           <v-btn append-icon="mdi-chevron-triple-right" :ripple="false" variant="outlined" @click="openAction1">Czytaj więcej</v-btn>
         </div>
       </div>
@@ -42,13 +42,26 @@
 <script setup lang="ts">
 const ACTION_1 = 'https://www.facebook.com/LPPoland/posts/pfbid0zNfQ6ZrVDFAZ8xnr2VNVtoEveCdfi2F63UK641EK7gjUo7pmhbpHbQzmFQydvGRYl';
 
+const ACTION_2 = 'https://www.facebook.com/LPPoland/posts/pfbid0daSQm3N8jGadVWikmhXgzrPcPcqLShq2Vytiybbed9HbYBX7VsVEKP1fU3m7Zxaql';
+
 function openAction1(): void {
   window.open(ACTION_1, '_blank');
+}
+
+function openAction2(): void {
+  window.open(ACTION_2, '_blank');
+}
+
+function openFacebookPage(): void {
+  window.open('https://www.facebook.com/LPPoland', '_blank');
 }
 </script>
 <style lang="scss">
 .v-container {
   user-select: none;
+}
+.siteLogo {
+  cursor: pointer;
 }
 .actionsContainer {
   user-select: none;
