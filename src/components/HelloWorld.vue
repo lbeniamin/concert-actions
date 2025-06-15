@@ -32,7 +32,7 @@
         <div class="d-flex flex-column justify-space-around">
           <h3 class="mb-2">Morze świateł na utworze "Lost"</h3>
           <p class="mb-2">Podczas fortepianowego intra do utworu "Lost", wszyscy włączamy latarki w telefonach i unosimy je w górę. Chcemy stworzyć niezapomniany widok tysięcy świateł, który poruszy serca nie tylko zespołu, ale i całej publiczności! ✨</p>
-          <v-btn append-icon="mdi-chevron-triple-right" :ripple="false" variant="outlined" @click="openAction1">Czytaj więcej</v-btn>
+          <v-btn append-icon="mdi-chevron-triple-right" :ripple="false" variant="outlined" @click="openAction3">Czytaj więcej</v-btn>
         </div>
       </div>
     </div>
@@ -44,12 +44,18 @@ const ACTION_1 = 'https://www.facebook.com/LPPoland/posts/pfbid0zNfQ6ZrVDFAZ8xnr
 
 const ACTION_2 = 'https://www.facebook.com/LPPoland/posts/pfbid0daSQm3N8jGadVWikmhXgzrPcPcqLShq2Vytiybbed9HbYBX7VsVEKP1fU3m7Zxaql';
 
+const ACTION_3 = 'https://www.facebook.com/LPPoland/posts/pfbid02byihbTccdYa4ZpiuiD6EBxKPXkkGLzerMKCPgqWPBcnad8UUnsUUyJygHPF1iGrxl';
+
 function openAction1(): void {
   window.open(ACTION_1, '_blank');
 }
 
 function openAction2(): void {
   window.open(ACTION_2, '_blank');
+}
+
+function openAction3(): void {
+  window.open(ACTION_3, '_blank');
 }
 
 function openFacebookPage(): void {
