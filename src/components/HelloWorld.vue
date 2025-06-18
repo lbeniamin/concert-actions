@@ -22,7 +22,7 @@
         <img src="@/assets/one-more-light.webp" alt="Wspólne śpiewanie One More Light" class="mr-4" />
         <div class="d-flex flex-column justify-space-around">
           <h3 class="mb-2">Wspólne śpiewanie "One More Light"</h3>
-          <p class="mb-2">Podczas przerwy przed bisem (najprawdopodobniej zaraz po utworze "Faint") lub na koniec występu chcemy razem, jako jedna społeczność, zaśpiewać "One More Light" dla Chestera Benningtona. To będzie nasz muzyczny hołd, nasz gest pamięci i miłości. ❤️</p>
+          <p class="mb-2">Podczas przerwy przed bisem (najprawdopodobniej zaraz po utworze "One Step Closer") chcemy razem, jako jedna społeczność, zaśpiewać "One More Light" dla Chestera Benningtona. To będzie nasz muzyczny hołd, nasz gest pamięci i miłości. ❤️</p>
           <v-btn append-icon="mdi-chevron-triple-right" :ripple="false" variant="outlined" @click="openAction2">Czytaj więcej</v-btn>
         </div>
       </div>
