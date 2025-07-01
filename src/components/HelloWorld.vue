@@ -35,6 +35,15 @@
           <v-btn append-icon="mdi-chevron-triple-right" :ripple="false" variant="outlined" @click="openAction3">Czytaj więcej</v-btn>
         </div>
       </div>
+      <v-divider class="my-4"/>
+      <div class="action d-flex">
+        <img src="@/assets/this-is-what-we-asked-for.webp" alt="This is what we asked for" class="mr-4" />
+        <div class="d-flex flex-column justify-space-around">
+          <h3 class="mb-2">Flaga sektorowa</h3>
+          <p class="mb-2">Przygotowujemy <a target="_blank" href="https://youtu.be/DbksdPQwZj4?si=3OcRIeXLXw4W6gnS">flagę sektorową</a> "This is what we asked for", którą chcemy zaprezentować zespołowi podczas koncertu. Będzie to najlepszy możliwy sposób na pokazanie mu, że doceniamy to, że powrócił do występowania i że dziękujemy za przyjazd do naszego kraju. 🏳️</p>
+          <v-btn append-icon="mdi-chevron-triple-right" :ripple="false" variant="outlined" @click="openAction4">Czytaj więcej</v-btn>
+        </div>
+      </div>
     </div>
   </v-container>
 </template>
@@ -46,6 +55,8 @@ const ACTION_2 = 'https://www.facebook.com/LPPoland/posts/pfbid0daSQm3N8jGadVWik
 
 const ACTION_3 = 'https://www.facebook.com/LPPoland/posts/pfbid02byihbTccdYa4ZpiuiD6EBxKPXkkGLzerMKCPgqWPBcnad8UUnsUUyJygHPF1iGrxl';
 
+const ACTION_4 = 'https://www.facebook.com/LPPoland/posts/pfbid02yWKsbZNdx81ZVMKgdT6ayAWxd592stCXF8vxv37xsdBM8yTeSbLdPsXusanzNLT8l';
+
 function openAction1(): void {
   window.open(ACTION_1, '_blank');
 }
@@ -56,6 +67,10 @@ function openAction2(): void {
 
 function openAction3(): void {
   window.open(ACTION_3, '_blank');
+}
+
+function openAction4(): void {
+  window.open(ACTION_4, '_blank');
 }
 
 function openFacebookPage(): void {
